@@ -1,0 +1,61 @@
+A longer description of all the juicy details...
+
+This text is supposed to be added to the final submission:
+
+Our solutions aims to manage and control people flow i.e. to guide people at events and in buildings.
+
+In essence, it solves the following problems:
+
+1.
+2.
+3.
+
+These are the technologies our solution relies on:
+
+1.
+3.
+3.
+
+This application can be used for instance in the following ways:
+
+1.
+2.
+3.
+
+
+Also, this solution is feasible to be used in a broader concept.
+For instance, it can be used together with these things:
+
+1. IoT
+2. 
+3.
+
+
+Also, this doesn't necessarely rely on these thins:
+
+1.
+2. 
+3.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
