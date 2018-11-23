@@ -23,15 +23,39 @@ const CustomMap = () => {
     [61.492961, 23.762859],
   ];
   const stalls = [
-    [61.493060, 23.763382],
-    [61.493120, 23.764154],
-    [61.493000, 23.764200],
-    [61.492940, 23.763430],
+    [61.49306, 23.763382],
+    [61.49312, 23.764154],
+    [61.493, 23.7642],
+    [61.49294, 23.76343],
+  ];
+
+  const stadionExitOne = [
+    [61.49294, 23.76194],
+    [61.4932, 23.76235],
+    [61.493, 23.76271],
+    [61.49279, 23.76245],
+  ];
+
+  const stadionExitTwo = [
+    [61.49232, 23.76258],
+    [61.4921, 23.76219],
+    [61.49191, 23.76305],
+    [61.49221, 23.76314],
+  ];
+
+  const bridge = [
+    [61.49423, 23.76031],
+    [61.49421, 23.76024],
+    [61.49379, 23.7604],
+    [61.49337, 23.76062],
+    [61.49338, 23.76071],
+    [61.49381, 23.76049],
+    [61.494, 23.7604],
   ];
   return (
-    <Map center={position} zoom={17}>
+    <Map center={position} zoom={18} minNativeZoom={18}> mnNativeZoom={18}
       <TileLayer
-        url="http://{s}.tiles.wmflabs.org/osm-no-labels/{z}/{x}/{y}.png"
+        url="https://{s}.tile.thunderforest.com/cycle/{z}/{x}/{y}.png"
         attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
       />
       <HeatmapLayer
@@ -67,6 +91,36 @@ const CustomMap = () => {
       <Polygon positions={stalls}>
         <Popup>
           WC.
+          <br />
+          4000 hlö.
+        </Popup>
+      </Polygon>
+
+      <Polygon positions={stadionExitOne}>
+        <Popup>
+          Stadion exit one.
+          <br />
+          4000 hlö.
+        </Popup>
+      </Polygon>
+      <Polygon positions={stadionExitTwo}>
+        <Popup>
+          Stadion exit two.
+          <br />
+          4000 hlö.
+        </Popup>
+      </Polygon>
+      <Polygon positions={stadionExitOne}>
+        <Popup>
+          Stadion exit one.
+          <br />
+          4000 hlö.
+        </Popup>
+      </Polygon>
+
+      <Polygon positions={bridge}>
+        <Popup>
+          Bridge.
           <br />
           4000 hlö.
         </Popup>
