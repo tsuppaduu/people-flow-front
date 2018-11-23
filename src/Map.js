@@ -52,6 +52,30 @@ const CustomMap = () => {
     [61.49381, 23.76049],
     [61.494, 23.7604],
   ];
+
+  const toilet1 = [
+    [23.7600485, 61.4931271],
+    [23.7602655, 61.4931674],
+    [23.7603299, 61.4930855],
+    [23.7601207, 61.4930394],
+  ];
+
+  const firstAid = [
+    [23.7608396, 61.4932606],
+    [23.7608530, 61.4932350],
+    [23.7611145, 61.4932625],
+    [23.7610969, 61.4932858],
+  ];
+
+  const entrance1 = [
+    [23.7602012, 61.4942756],
+    [23.7603125, 61.4942884],
+    [23.7603447, 61.4942353],
+    [23.7602374, 61.4942058],
+  ];
+
+
+
   return (
     <Map center={position} zoom={18} minNativeZoom={18}> 
       <TileLayer
@@ -103,6 +127,7 @@ const CustomMap = () => {
           4000 hlö.
         </Popup>
       </Polygon>
+
       <Polygon positions={stadionExitTwo}>
         <Popup>
           Stadion exit two.
@@ -110,6 +135,7 @@ const CustomMap = () => {
           4000 hlö.
         </Popup>
       </Polygon>
+
       <Polygon positions={stadionExitOne}>
         <Popup>
           Stadion exit one.
@@ -125,6 +151,32 @@ const CustomMap = () => {
           4000 hlö.
         </Popup>
       </Polygon>
+
+      <Polygon positions={toilet1}>
+        <Popup>
+          Toilet.
+          <br />
+          150 hlö.
+        </Popup>
+      </Polygon>
+
+      <Polygon positions={firstAid}>
+        <Popup>
+          First Aid.
+          <br />
+          50 hlö.
+        </Popup>
+      </Polygon>
+
+      <Polygon positions={entrance1}>
+        <Popup>
+          Entrance 1.
+          <br />
+          400 hlö.
+        </Popup>
+      </Polygon>
+
+
     </Map>
   );
 };
