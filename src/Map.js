@@ -53,9 +53,9 @@ const CustomMap = () => {
     [61.494, 23.7604],
   ];
   return (
-    <Map center={position} zoom={18} minNativeZoom={18}> mnNativeZoom={18}
+    <Map center={position} zoom={18} minNativeZoom={18}> 
       <TileLayer
-        url="https://{s}.tile.thunderforest.com/cycle/{z}/{x}/{y}.png"
+        url="https://korona.geog.uni-heidelberg.de/tiles/roads/x={x}&y={y}&z={z}"
         attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
       />
       <HeatmapLayer
