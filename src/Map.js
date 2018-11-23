@@ -1,5 +1,5 @@
 import React from 'react'
-import { Map, Marker, Popup, TileLayer } from 'react-leaflet'
+import { Map, Marker, Popup, TileLayer, Polygon } from 'react-leaflet'
 import HeatmapLayer from 'react-leaflet-heatmap-layer';
 
 export const addressPoints = [
@@ -9,12 +9,13 @@ export const addressPoints = [
 ]
 
 const CustomMap = () => {
-  const position = [61.492625, 23.763434]
+  const position = [61.492625, 23.763434];
+  const mainStagePos = [[61.493040, 23.764300], [61.4931200, 23.765325], [61.492520, 23.765550], [61.492440, 23.764590]];
   return (
     <Map center={position} zoom={17}>
       <TileLayer
         url="http://{s}.tiles.wmflabs.org/osm-no-labels/{z}/{x}/{y}.png"
-        attribution="&copy; <a href=&quot;http://osm.org/copyright&quot;>OpenStreetMap</a> contributors"
+        attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
       />
       <HeatmapLayer
             points={addressPoints}
@@ -24,8 +25,16 @@ const CustomMap = () => {
       <Marker position={position}>
         <Popup>A pretty CSS3 popup.<br />Easily customizable.</Popup>
       </Marker>
-    </Map>
-  )
-}
 
-export default CustomMap
+      <Polygon positions={mainStagePos} >
+        <Popup>
+          Main stage.
+          <br />
+          1000 hlö.
+        </Popup>
+      </Polygon>
+    </Map>
+  );
+};
+
+export default CustomMap;
