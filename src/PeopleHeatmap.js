@@ -26,8 +26,8 @@ class PeopleHeatmap extends Component {
   render() {
     const { zoom } = this.props
     
-    const radius = zoom === 17 ? 10 : zoom === 18 ? 15 : 22 
-    const blur = zoom === 17 ? 10 : zoom === 18 ? 15 : 22 
+    const radius = zoom === 17 ? 20 : zoom === 18 ? 30 : 44
+    const blur = zoom === 17 ? 20 : zoom === 18 ? 30 : 44 
 
     
     console.log(radius)
