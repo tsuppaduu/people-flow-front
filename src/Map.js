@@ -37,8 +37,6 @@ class CustomMap extends Component {
     const mapBounds = [[61.494761, 23.758024], [61.491382, 23.767546]];
     const { zoom } = this.state;
 
-    console.log(zoom);
-
     return (
       <Map
         center={middlePosition}
