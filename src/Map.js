@@ -139,6 +139,10 @@ const CustomMap = () => {
         longitudeExtractor={m => m[1]}
         latitudeExtractor={m => m[0]}
         intensityExtractor={m => parseFloat(m[2])}
+        gradient={{ 0.4: 'green', 0.8: 'orange', 1.0: 'red' }}
+        blur={1}
+        radius={10}
+        minOpacity={0.01}
       />
       <Marker position={middlePosition}>
         <Popup>
