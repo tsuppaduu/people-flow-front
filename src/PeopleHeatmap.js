@@ -29,8 +29,7 @@ class PeopleHeatmap extends Component {
     const radius = zoom === 17 ? 20 : zoom === 18 ? 30 : 44
     const blur = zoom === 17 ? 20 : zoom === 18 ? 30 : 44 
 
-    
-    console.log(radius)
+  
     return (
       <HeatmapLayer
         points={this.state.data}
