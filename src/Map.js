@@ -3,6 +3,7 @@ import { Map, Marker, Popup, TileLayer } from 'react-leaflet'
 import Polygon from './Polygon'
 import HeatmapLayer from 'react-leaflet-heatmap-layer'
 import polygonCoords from './polygonCoords';
+import Peopleheatmap from './PeopleHeatmap';
 
 export const addressPoints = [
   [61.492635, 23.763434, '10'],
@@ -34,16 +35,7 @@ const CustomMap = (props) => {
         url="https://korona.geog.uni-heidelberg.de/tiles/roads/x={x}&y={y}&z={z}"
         attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
       />
-      <HeatmapLayer
-        points={props.data}
-        longitudeExtractor={m => m.lng}
-        latitudeExtractor={m => m.lat}
-        intensityExtractor={m => parseFloat(m.devices)}
-        gradient={{ 0.4: 'green', 0.8: 'orange', 1.0: 'red' }}
-        blur={1}
-        radius={10}
-        minOpacity={0.01}
-      />
+      <PeopleHeatmap/>
       <Marker position={middlePosition}>
         <Popup>
           A pretty CSS3 popup.
