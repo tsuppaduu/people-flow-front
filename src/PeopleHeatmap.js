@@ -10,10 +10,12 @@ class PeopleHeatmap extends Component {
     this.state = {data: []}
   }
   async componentDidMount() {
-    const data = await scannerService.getScanners()
-    console.log("uusi", data)
-    this.setState({data:data})
-    this.interval = setInterval(() => scannerService.getScanners().then(newData => this.setState({ data: newData})) , 5000);
+    scannerService.getScanners().then(newData => this.setState({ data: newData})).catch(e => {
+    console.log(e);
+})
+    this.interval = setInterval(() => scannerService.getScanners().then(newData => this.setState({ data: newData})).catch(e => {
+    console.log(e);
+}) , 500);
     
   }
 
@@ -27,10 +29,11 @@ class PeopleHeatmap extends Component {
         longitudeExtractor={m => m.lng}
         latitudeExtractor={m => m.lat}
         intensityExtractor={m => parseFloat(m.devices)}
-        gradient={{ 0.4: 'green', 0.8: 'orange', 1.0: 'red' }}
+        gradient={{0.0: 'white', 0.2: 'green', 0.5: 'orange', 0.8: 'red' }}
         blur={1}
         radius={10}
         minOpacity={0.01}
+        max={250}
       />
     );
   }
