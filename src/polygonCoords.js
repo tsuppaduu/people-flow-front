@@ -1,26 +1,26 @@
 
 const polyPositions = [    
-      {desc: "Water faucet", coords: [
+      {desc: "Water faucet", color: "blue", coords: [
         [61.4929463, 23.7631786],
         [61.4930518, 23.7629637],
         [61.4929967, 23.7627210],
       ]},
 
-      {desc: "YleX studio", coords: [
+      {desc: "YleX studio", color: "blue", coords: [
         [61.4930517, 23.7630041],
         [61.4929519, 23.7632120],
         [61.4929971, 23.7637765],
         [61.4931110, 23.7637175],
       ]},
 
-      {desc: "Toilets in stadium", coords: [
+      {desc: "Toilets in stadium", color: "yellow", coords: [
         [61.4929971, 23.7637765],
         [61.4931110, 23.7637175],
         [61.4931818, 23.7645128],
         [61.4930631, 23.7645731],
       ]},
     
-      {desc: "First exit from stadium", coords: [
+      {desc: "First exit from stadium", color: "blue", coords: [
         [61.4928849, 23.7624891],
         [61.4929440, 23.7621289],
         [61.4930810, 23.7623247],
@@ -28,14 +28,14 @@ const polyPositions = [
         [61.4930234, 23.7627270],
       ]},
     
-      {desc: "Second exit from stadium", coords: [
+      {desc: "Second exit from stadium", color: "blue", coords: [
         [61.49232, 23.76258],
         [61.4921, 23.76219],
         [61.49191, 23.76305],
         [61.49221, 23.76314],
       ]},
     
-      {desc: "Bridge", coords: [
+      {desc: "Bridge", color: "blue", coords: [
         [61.49423, 23.76031],
         [61.49421, 23.76024],
         [61.49379, 23.7604],
@@ -45,21 +45,21 @@ const polyPositions = [
         [61.494, 23.7604],
       ]},
     
-      {desc: "Toilets in park", coords: [
+      {desc: "Toilets in park", color: "yellow", coords: [
         [61.4932437, 23.7600245],
         [61.4931902, 23.7600937],
         [61.4932114, 23.7603547],
         [61.4932767, 23.7602983],
       ]},
     
-      {desc: "Eatery small", coords: [
+      {desc: "Eatery small", color: "red", coords: [
         [61.4932314, 23.7618401],
         [61.4933054, 23.7618119],
         [61.4932439, 23.7610931],
         [61.4931646, 23.7611199],
       ]},
 
-      {desc: "Eatery large", coords: [
+      {desc: "Eatery large", color: "red", coords: [
         [61.4928338, 23.7602582],
         [61.4929171, 23.7599588],
         [61.4929709, 23.7600482],
@@ -72,35 +72,35 @@ const polyPositions = [
         [61.4928780, 23.7603388],
       ]},
 
-      {desc: "First Aid", coords: [
+      {desc: "First Aid", color: "blue", coords: [
         [61.4932973, 23.7618606],
         [61.4932410, 23.7618821],
         [61.4932554, 23.7620802],
         [61.4933165, 23.7620564],
       ]},
     
-      {desc: "Entrance for basic ticket for 2 days", coords: [
+      {desc: "Entrance for basic ticket for 2 days", color: "blue", coords: [
         [61.4942756, 23.7602012],
         [61.4942884, 23.7603125],
         [61.4942353, 23.7603447],
         [61.4942058, 23.7602374],
       ]},
     
-      {desc: "Yle studio", coords: [
+      {desc: "Yle studio", color: "blue", coords: [
         [61.4918819, 23.7595481],
         [61.4920125, 23.7596125],
         [61.4919664, 23.7601006],
         [61.4918461, 23.7600631],
       ]},
     
-      {desc: "Toilets near second exit", coords: [
+      {desc: "Toilets near second exit", color: "yellow", coords: [
         [61.4919245, 23.7621469],
         [61.491831, 23.7622125],
         [61.4918643, 23.7626497],
         [61.4919564, 23.7625772],
       ]},
     
-      {desc: "Sokos VIP area", coords: [
+      {desc: "Sokos VIP area", color: "blue", coords: [
         [61.4927066, 23.7615434],
         [61.4927181, 23.7616534],
         [61.4927988, 23.7616185],
@@ -110,70 +110,70 @@ const polyPositions = [
         [61.4922403, 23.7616925],
       ]},
     
-      {desc: "Tent stage", coords: [
+      {desc: "Tent stage", color: "blue", coords: [
         [61.4926808, 23.7595169],
         [61.4925707, 23.7602303],
         [61.4919408, 23.7596617],
         [61.4919997, 23.7590823],
       ]},
 
-      {desc: "Toilets inside the stand", coords: [
+      {desc: "Toilets inside the stand",color: "yellow",  coords: [
         [61.4932724, 23.7643010],
         [61.4933801, 23.7642425],
         [61.4934371, 23.7649040],
         [61.4933326, 23.7649408],
       ]},
 
-      {desc: "Inva toilets", coords: [
+      {desc: "Inva toilets", color: "blue", coords: [
         [61.4933020, 23.7633596],
         [61.4931958, 23.7634089],
         [61.4931779, 23.7632158],
         [61.4932828, 23.7631739],
       ]},
 
-      {desc: "Veikkaus", coords: [
+      {desc: "Veikkaus",  color: "blue", coords: [
         [61.4933801, 23.7642425],
         [61.4932724, 23.7643010],
         [61.4932265, 23.7638597],
         [61.4933456, 23.7638061],
       ]},
 
-      {desc: "Exclusive area", coords: [
+      {desc: "Exclusive area",  color: "blue", coords: [
         [61.4924277, 23.7644686],
         [61.4925096, 23.7652303],
         [61.4924046, 23.7652679],
         [61.4923355, 23.7644847],
       ]},
 
-      {desc: "Sonera", coords: [
+      {desc: "Sonera",  color: "blue", coords: [
         [61.4925072, 23.7605845],
         [61.4925104, 23.7607991],
         [61.4924477, 23.7608822],
         [61.4924349, 23.7604906],
       ]},
 
-      {desc: "Entrance for basic ticket (1 day), exlusice ticket and VIP ticket", coords: [
+      {desc: "Entrance for basic ticket (1 day), exlusice ticket and VIP ticket",  color: "blue", coords: [
         [61.494102, 23.7659954],
         [61.494224, 23.766159],
         [61.4940742, 23.7664326],
         [61.4939987, 23.7662582],
       ]},
 
-      {desc: "Street stage", coords: [
+      {desc: "Street stage",  color: "blue", coords: [
         [61.4937176, 23.7643452],
         [61.4934612, 23.7644685],
         [61.493424, 23.7641386],
         [61.4936865, 23.7640447],
       ]},
 
-      {desc: "Serving area for alcohol n street stage", coords: [
+      {desc: "Serving area for alcohol n street stage",  color: "blue", coords: [
         [61.4934270, 23.7641171],
         [61.4935602, 23.7640613],
         [61.4934885, 23.7633123],
         [61.4933553, 23.7633606], 
       ]},
 
-      {desc: "Serving area for alcohol in stadium", coords: [
+      {desc: "Serving area for alcohol in stadium",  color: "blue", coords: [
         [61.4925018, 23.7652243],
         [61.4927259, 23.7651441],
         [61.4926366, 23.7641044],
@@ -192,7 +192,21 @@ const polyPositions = [
         [61.4924903, 23.7651756],
       ]},
 
-      {desc: "Platform for artists", coords: [
+      {desc: "Main stage",  color: "black", coords: [
+        [61.4926998, 23.7648119],
+        [61.4928288, 23.7647605],
+        [61.4928600, 23.7650861],
+        [61.4930602, 23.7650198], 
+        [61.4930846, 23.7652746],
+        [61.4929857, 23.7653229],
+        [61.4930169, 23.7656576],
+        [61.4926967, 23.7657813],
+        [61.4926596, 23.7654445],
+        [61.4925559, 23.7654899],
+        [61.4925282, 23.7652266],
+        [61.4927274, 23.7651644],
+      ]},
+      {desc: "Main stage",  color: "black", coords: [
         [61.4926998, 23.7648119],
         [61.4928288, 23.7647605],
         [61.4928600, 23.7650861],
@@ -207,7 +221,7 @@ const polyPositions = [
         [61.4927274, 23.7651644],
       ]},
 
-      {desc: "Stadium stage by Ylex", coords: [
+      {desc: "Stadium stage by Ylex",  color: "blue", coords: [
         [61.4927042, 23.7647849],
         [61.4926470, 23.7641126],
         [61.4928758, 23.7625067],
@@ -218,21 +232,21 @@ const polyPositions = [
         [61.4928314, 23.7647436],
       ]},
 
-      {desc: "Serving area for alcohol in the park", coords: [
+      {desc: "Serving area for alcohol in the park",  color: "blue", coords: [
         [61.4932074, 23.7625784],
         [61.4932699, 23.7625512],
         [61.4932059, 23.7618467],
         [61.4931365, 23.7618769],
       ]},
 
-      {desc: "Point of sale", coords: [
+      {desc: "Point of sale",  color: "blue", coords: [
         [61.4932074, 23.7625784],
         [61.4932699, 23.7625512],
         [61.4932059, 23.7618467],
         [61.4931365, 23.7618769],
       ]},
 
-      {desc: "Serving area for alcohol in the park", coords: [
+      {desc: "Serving area for alcohol in the park",  color: "blue", coords: [
         [61.4922472, 23.7591040],
         [61.4922754, 23.7589324],
         [61.4929743, 23.7593778],
