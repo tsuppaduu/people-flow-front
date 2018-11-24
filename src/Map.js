@@ -11,7 +11,8 @@ export const addressPoints = [
 ];
 
 const CustomMap = () => {
-  const position = [61.492625, 23.763434];
+  const middlePosition = [61.492600, 23.762500];
+  const mapBounds = [[61.494761, 23.758024], [61.491382, 23.767546]]
   const mainStagePos = [
     [61.49304, 23.7643],
     [61.49312, 23.765325],
@@ -109,7 +110,7 @@ const CustomMap = () => {
 
 
   return (
-    <Map center={position} zoom={18} minNativeZoom={18}> 
+    <Map center={middlePosition} zoom={17} minNativeZoom={18} maxBounds = { mapBounds } minZoom = {17} maxZoom = {19}> 
       <TileLayer
         url="https://korona.geog.uni-heidelberg.de/tiles/roads/x={x}&y={y}&z={z}"
         attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
@@ -120,7 +121,7 @@ const CustomMap = () => {
         latitudeExtractor={m => m[0]}
         intensityExtractor={m => parseFloat(m[2])}
       />
-      <Marker position={position}>
+      <Marker position={middlePosition}>
         <Popup>
           A pretty CSS3 popup.
           <br />
