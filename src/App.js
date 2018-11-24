@@ -11,7 +11,12 @@ class App extends Component {
     const data = await scannerService.getScanners()
     console.log("uusi", data)
     this.setState({data:data})
+    this.interval = setInterval(() => scannerService.getScanners().then(newData => this.setState({ data: newData})) , 5000);
     
+  }
+
+  componentWillUnmount() {
+    clearInterval(this.interval);
   }
   render() {
     return (
