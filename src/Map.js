@@ -37,10 +37,6 @@ class CustomMap extends Component {
     const mapBounds = [[61.494761, 23.758024], [61.491382, 23.767546]];
     const { zoom } = this.state
 
-    const handleClick = e => {
-      console.log(e.latlng);
-    };
-
     console.log(zoom)
 
     return (
@@ -51,7 +47,7 @@ class CustomMap extends Component {
         maxBounds={mapBounds}
         minZoom={17}
         maxZoom={19}
-        onClick={handleClick}
+        onClick={this.handleClick}
         onzoomend={this.handleZoomChange}
       >
         <LayersControl collapsed = {false}>
