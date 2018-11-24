@@ -21,6 +21,12 @@ class CustomMap extends Component {
   }
 
   handleZoomChange = (e) => this.setState({ zoom: e.target._zoom })
+  let np = []
+  const handleClick = e => {
+    const npt = {desc:"sens " + e.latlng, coords:[e.latlng.lat, e.latlng.lng]}
+    np.push(npt)
+    console.log(JSON.stringify(np))
+  };
 
   render() {
     const middlePosition = [61.4926, 23.7625];
