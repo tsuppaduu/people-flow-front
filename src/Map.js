@@ -1,6 +1,7 @@
 import React from 'react';
-import { Map, Marker, Popup, TileLayer, Polygon } from 'react-leaflet';
-import HeatmapLayer from 'react-leaflet-heatmap-layer';
+import { Map, Marker, Popup, TileLayer } from 'react-leaflet'
+import Polygon from './Polygon'
+import HeatmapLayer from 'react-leaflet-heatmap-layer'
 
 export const addressPoints = [
   [61.492635, 23.763434, '10'],
