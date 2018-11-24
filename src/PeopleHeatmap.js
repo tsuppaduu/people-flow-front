@@ -8,6 +8,7 @@ class PeopleHeatmap extends Component {
   constructor(props) {
     super(props);
     this.state = {data: []}
+
   }
   async componentDidMount() {
     scannerService.getScanners().then(newData => this.setState({ data: newData})).catch(e => {
@@ -23,17 +24,25 @@ class PeopleHeatmap extends Component {
     clearInterval(this.interval);
   }
   render() {
+    const { zoom } = this.props
+    
+    const radius = zoom === 17 ? 10 : zoom === 18 ? 15 : 22 
+    const blur = zoom === 17 ? 10 : zoom === 18 ? 15 : 22 
+
+    
+    console.log(radius)
     return (
       <HeatmapLayer
         points={this.state.data}
         longitudeExtractor={m => m.lng}
         latitudeExtractor={m => m.lat}
         intensityExtractor={m => parseFloat(m.devices)}
-        gradient={{0.0: 'white', 0.2: 'green', 0.5: 'orange', 0.8: 'red' }}
-        blur={1}
-        radius={10}
+        gradient={{ 0.4: 'green', 0.8: 'orange', 1.0: 'red' }}
+        radius={radius}
+        blur={blur}
         minOpacity={0.01}
-        max={250}
+        max={200}
+        maxZoom={17}
       />
     );
   }
