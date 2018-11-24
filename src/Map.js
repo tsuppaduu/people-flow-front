@@ -62,11 +62,6 @@ class CustomMap extends Component {
           <Overlay name="Heatmap" checked = {true}>
             <PeopleHeatmap zoom={zoom}/>
           </Overlay>
-          <Marker position={middlePosition}>
-            <Popup>
-              Center Point
-            </Popup>
-          </Marker>
 
           <Overlay name="Ares of interest" checked = {true}>
             <LayerGroup>
