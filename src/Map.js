@@ -19,21 +19,6 @@ const CustomMap = () => {
   const handleClick = (e) => {
     console.log(e.latlng)
   }
-  
-  const exclusiveArea = [
-    [61.4924277, 23.7644686],
-    [61.4925096, 23.7652303],
-    [61.4924046, 23.7652679],
-    [61.4923355, 23.7644847],
-  ];
-
-  const sonera = [
-    [61.4925072, 23.7605845],
-    [61.4925104, 23.7607991],
-    [61.4924477, 23.7608822],
-    [61.4924349, 23.7604906],
-  ];
-
 
   return (
     <Map
@@ -72,6 +57,151 @@ const CustomMap = () => {
           <Popup>{pos.desc}</Popup>
         </Polygon>
       ))}
+
+      <Polygon positions={mainStagePos}>
+        <Popup>
+          Main stage.
+          <br />
+          1000 hlö.
+        </Popup>
+      </Polygon>
+
+      <Polygon positions={foodOne}>
+        <Popup>
+          Food place one.
+          <br />
+          40 hlö.
+        </Popup>
+      </Polygon>
+
+      <Polygon positions={stalls}>
+        <Popup>
+          WC.
+          <br />
+          60 hlö.
+        </Popup>
+      </Polygon>
+
+      <Polygon positions={stadionExitTwo}>
+        <Popup>
+          Stadion exit two.
+          <br />
+          450 hlö.
+        </Popup>
+      </Polygon>
+
+      <Polygon positions={stadionExitOne}>
+        <Popup>
+          Stadion exit one.
+          <br />
+          350 hlö.
+        </Popup>
+      </Polygon>
+
+      <Polygon positions={bridge}>
+        <Popup>
+          Bridge.
+          <br />
+          400 hlö.
+        </Popup>
+      </Polygon>
+
+      <Polygon positions={toilet1}>
+        <Popup>
+          Toilet.
+          <br />
+          150 hlö.
+        </Popup>
+      </Polygon>
+
+      <Polygon positions={firstAid}>
+        <Popup>
+          First Aid.
+          <br />
+          50 hlö.
+        </Popup>
+      </Polygon>
+
+      <Polygon positions={entrance1}>
+        <Popup>
+          Entrance 1.
+          <br />
+          400 hlö.
+        </Popup>
+      </Polygon>
+
+      <Polygon positions={yleStudio}>
+        <Popup>
+          Yle Studio.
+          <br />
+          60 hlö.
+        </Popup>
+      </Polygon>
+
+      <Polygon positions={toilet2}>
+        <Popup>
+          Toilet 2.
+          <br />
+          40 hlö.
+        </Popup>
+      </Polygon>
+
+      <Polygon positions={vipArea}>
+        <Popup>
+          Vip Area.
+          <br />
+          300 hlö.
+        </Popup>
+      </Polygon>
+
+      <Polygon positions={tentStage}>
+        <Popup>
+          Tent Stage.
+          <br />
+          600 hlö.
+        </Popup>
+      </Polygon>
+
+      <Polygon positions={exclusiveArea}>
+        <Popup>
+          Exclusive Area.
+          <br />
+          240 hlö.
+        </Popup>
+      </Polygon>
+
+      <Polygon positions={sonera}>
+        <Popup>
+          Sonera Tent.
+          <br />
+          30 hlö.
+        </Popup>
+      </Polygon>
+
+      <Polygon positions={entrance2}>
+        <Popup>
+          Entrance for basic ticket, exclusive ticket and VIP ticket.
+          <br />
+          80 hlö.
+        </Popup>
+      </Polygon>
+
+      <Polygon positions={streetStage}>
+        <Popup>
+          Street Stage.
+          <br />
+          30 hlö.
+        </Popup>
+      </Polygon>
+
+      <Polygon positions={servingArea}>
+        <Popup>
+          Serving area for alcohol.
+          <br />
+          340 hlö.
+        </Popup>
+      </Polygon>
+
     </Map>
   );
 };
