@@ -107,9 +107,13 @@ const CustomMap = () => {
     [61.4919997, 23.7590823],
   ];
 
+  const handleClick = (e) => {
+    console.log(e.latlng)
+  }
+
 
   return (
-    <Map center={position} zoom={18} minNativeZoom={18}> 
+    <Map center={position} zoom={18} minNativeZoom={18} onClick={handleClick}> 
       <TileLayer
         url="https://korona.geog.uni-heidelberg.de/tiles/roads/x={x}&y={y}&z={z}"
         attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
