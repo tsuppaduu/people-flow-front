@@ -1,9 +1,14 @@
 import axios from "axios"
 
-const apiUrl = "/scanners"
+let baseUrl = ''
+if (process.env.NODE_ENV === 'production') {
+  baseUrl = 'https://aikavali-back.herokuapp.com'
+}
+baseUrl = `${baseUrl}/scanners`
+
 
 const getScanners = async () => {
-    const { data } = await axios.get(apiUrl)
+    const { data } = await axios.get(baseUrl)
     return data
 }
 
