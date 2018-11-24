@@ -16,16 +16,20 @@ export const addressPoints = [
 const { Overlay } = LayersControl;
 
 class CustomMap extends Component {
-  state = {
-    zoom: 17 
+  constructor(props) {
+    super(props)
+    this.state = {
+      zoom: 17 
+    }
+    this.np = []
   }
 
   handleZoomChange = (e) => this.setState({ zoom: e.target._zoom })
-  let np = []
-  const handleClick = e => {
+  
+  handleClick = e => {
     const npt = {desc:"sens " + e.latlng, coords:[e.latlng.lat, e.latlng.lng]}
-    np.push(npt)
-    console.log(JSON.stringify(np))
+    this.np.push(npt)
+    console.log(JSON.stringify(this.np))
   };
 
   render() {
