@@ -102,7 +102,7 @@ const CustomMap = () => {
     [61.4922403, 23.7616925],
   ];
 
-  const TentStage = [
+  const tentStage = [
     [61.4926808, 23.7595169],
     [61.4925707, 23.7602303],
     [61.4919408, 23.7596617],
@@ -112,6 +112,20 @@ const CustomMap = () => {
   const handleClick = (e) => {
     console.log(e.latlng)
   }
+  
+  const exclusiveArea = [
+    [61.4924277, 23.7644686],
+    [61.4925096, 23.7652303],
+    [61.4924046, 23.7652679],
+    [61.4923355, 23.7644847],
+  ];
+
+  const sonera = [
+    [61.4925072, 23.7605845],
+    [61.4925104, 23.7607991],
+    [61.4924477, 23.7608822],
+    [61.4924349, 23.7604906],
+  ];
 
 
   return (
@@ -158,19 +172,11 @@ const CustomMap = () => {
         </Popup>
       </Polygon>
 
-      <Polygon positions={stadionExitOne}>
-        <Popup>
-          Stadion exit one.
-          <br />
-          4000 hlö.
-        </Popup>
-      </Polygon>
-
       <Polygon positions={stadionExitTwo}>
         <Popup>
           Stadion exit two.
           <br />
-          4000 hlö.
+          450 hlö.
         </Popup>
       </Polygon>
 
@@ -178,7 +184,7 @@ const CustomMap = () => {
         <Popup>
           Stadion exit one.
           <br />
-          4000 hlö.
+          350 hlö.
         </Popup>
       </Polygon>
 
@@ -238,7 +244,7 @@ const CustomMap = () => {
         </Popup>
       </Polygon>
 
-      <Polygon positions={TentStage}>
+      <Polygon positions={tentStage}>
         <Popup>
           Tent Stage.
           <br />
@@ -246,6 +252,21 @@ const CustomMap = () => {
         </Popup>
       </Polygon>
 
+      <Polygon positions={exclusiveArea}>
+        <Popup>
+          Exclusive Area.
+          <br />
+          240 hlö.
+        </Popup>
+      </Polygon>
+
+      <Polygon positions={sonera}>
+        <Popup>
+          Sonera Tent.
+          <br />
+          30 hlö.
+        </Popup>
+      </Polygon>
 
     </Map>
   );
