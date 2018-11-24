@@ -19,25 +19,6 @@ const CustomMap = (props) => {
   const handleClick = (e) => {
     console.log(e.latlng)
   }
-<<<<<<< HEAD
-
-=======
-  
-  const exclusiveArea = [
-    [61.4924277, 23.7644686],
-    [61.4925096, 23.7652303],
-    [61.4924046, 23.7652679],
-    [61.4923355, 23.7644847],
-  ];
-
-  const sonera = [
-    [61.4925072, 23.7605845],
-    [61.4925104, 23.7607991],
-    [61.4924477, 23.7608822],
-    [61.4924349, 23.7604906],
-  ];
-  console.log("taalla", props.data)
->>>>>>> 7cd5278bdf6549f182cb558cb92a5ed33b9291f0
 
   return (
     <Map
