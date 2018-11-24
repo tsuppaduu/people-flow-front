@@ -26,7 +26,7 @@ class PeopleHeatmap extends Component {
         radius={radius}
         blur={blur}
         minOpacity={0.01}
-        max={200}
+        max={80}
         maxZoom={17}
       />
     );
