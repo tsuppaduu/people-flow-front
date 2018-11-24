@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { Map, Marker, Popup, TileLayer } from 'react-leaflet'
 import Polygon from './Polygon'
 import HeatmapLayer from 'react-leaflet-heatmap-layer'
@@ -23,7 +23,7 @@ class PeopleHeatmap extends Component {
   render() {
     return (
       <HeatmapLayer
-        points={props.data}
+        points={this.state.data}
         longitudeExtractor={m => m.lng}
         latitudeExtractor={m => m.lat}
         intensityExtractor={m => parseFloat(m.devices)}
@@ -35,3 +35,5 @@ class PeopleHeatmap extends Component {
     );
   }
 }
+
+export default PeopleHeatmap;

@@ -3,7 +3,7 @@ import { Map, Marker, Popup, TileLayer } from 'react-leaflet'
 import Polygon from './Polygon'
 import HeatmapLayer from 'react-leaflet-heatmap-layer'
 import polygonCoords from './polygonCoords';
-import Peopleheatmap from './PeopleHeatmap';
+import PeopleHeatmap from './PeopleHeatmap';
 
 export const addressPoints = [
   [61.492635, 23.763434, '10'],
