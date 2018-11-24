@@ -7,22 +7,8 @@ import scannerService from './services/scannerService';
 class PeopleHeatmap extends Component {
   constructor(props) {
     super(props);
-    this.state = {data: []}
-
   }
-  async componentDidMount() {
-    scannerService.getScanners().then(newData => this.setState({ data: newData})).catch(e => {
-        console.log(e);
-    })
-    this.interval = setInterval(() => scannerService.getScanners().then(newData => this.setState({ data: newData})).catch(e => {
-        console.log(e);
-    }) , 500);
-    
-  }
-
-  componentWillUnmount() {
-    clearInterval(this.interval);
-  }
+  
   render() {
     const { zoom } = this.props
     
@@ -32,7 +18,7 @@ class PeopleHeatmap extends Component {
   
     return (
       <HeatmapLayer
-        points={this.state.data}
+        points={this.props.data}
         longitudeExtractor={m => m.lng}
         latitudeExtractor={m => m.lat}
         intensityExtractor={m => parseFloat(m.devices)}

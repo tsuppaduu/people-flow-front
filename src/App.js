@@ -7,11 +7,19 @@ class App extends Component {
     super(props);
     this.state = {data: []}
   }
+
   async componentDidMount() {
-    const data = await scannerService.getScanners()
-    console.log("uusi", data)
-    this.setState({data:data})
+    scannerService.getScanners().then(newData => this.setState({ data: newData})).catch(e => {
+        console.log(e);
+    })
+    this.interval = setInterval(() => scannerService.getScanners().then(newData => this.setState({ data: newData})).catch(e => {
+        console.log(e);
+    }) , 500);
     
+  }
+
+  componentWillUnmount() {
+    clearInterval(this.interval);
   }
   render() {
     return (

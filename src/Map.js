@@ -56,14 +56,14 @@ class CustomMap extends Component {
             attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
           />
           <Overlay name="Heatmap" checked = {true}>
-            <PeopleHeatmap zoom={zoom}/>
+            <PeopleHeatmap zoom={zoom} data={this.props.data}/>
           </Overlay>
 
           <Overlay name="Ares of interest" checked = {true}>
             <LayerGroup>
               {polygonCoords.polyPositions.map(pos => (
-                <Polygon key={pos.desc} positions={pos.coords} color={pos.color}>
-                  <Popup>{pos.desc}</Popup>
+                <Polygon key={pos.desc} positions={pos.coords} color={pos.color} data={this.props.data}>
+                  
                 </Polygon>
               ))}
             </LayerGroup>
