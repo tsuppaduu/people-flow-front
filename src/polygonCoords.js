@@ -79,7 +79,7 @@ const polyPositions = [
         [61.4933165, 23.7620564],
       ]},
     
-      {desc: "Entrance for basic ticket for 2 days", color: "blue", coords: [
+      {desc: "Entrance for basic ticket for 2 days", color: "brown", coords: [
         [61.4942756, 23.7602012],
         [61.4942884, 23.7603125],
         [61.4942353, 23.7603447],
@@ -152,28 +152,28 @@ const polyPositions = [
         [61.4924349, 23.7604906],
       ]},
 
-      {desc: "Entrance for basic ticket (1 day), exlusice ticket and VIP ticket",  color: "blue", coords: [
+      {desc: "Entrance for basic ticket (1 day), exlusice ticket and VIP ticket",  color: "brown", coords: [
         [61.494102, 23.7659954],
         [61.494224, 23.766159],
         [61.4940742, 23.7664326],
         [61.4939987, 23.7662582],
       ]},
 
-      {desc: "Street stage",  color: "blue", coords: [
+      {desc: "Street stage",  color: "black", coords: [
         [61.4937176, 23.7643452],
         [61.4934612, 23.7644685],
         [61.493424, 23.7641386],
         [61.4936865, 23.7640447],
       ]},
 
-      {desc: "Serving area for alcohol n street stage",  color: "blue", coords: [
+      {desc: "Street stage (alcohol serving area)",  color: "blue", coords: [
         [61.4934270, 23.7641171],
         [61.4935602, 23.7640613],
         [61.4934885, 23.7633123],
         [61.4933553, 23.7633606], 
       ]},
 
-      {desc: "Serving area for alcohol in stadium",  color: "blue", coords: [
+      {desc: "Stadium stage by YLEX (alcohol serving area)",  color: "blue", coords: [
         [61.4925018, 23.7652243],
         [61.4927259, 23.7651441],
         [61.4926366, 23.7641044],
