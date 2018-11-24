@@ -61,7 +61,7 @@ class CustomMap extends Component {
           <Overlay name="Ares of interest" checked = {true}>
             <LayerGroup>
               {polygonCoords.polyPositions.map(pos => (
-                <Polygon key={pos.coords} positions={pos.coords}>
+                <Polygon key={pos.desc} positions={pos.coords}>
                   <Popup>{pos.desc}</Popup>
                 </Polygon>
               ))}
