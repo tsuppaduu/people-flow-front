@@ -29,7 +29,7 @@ const CustomPolygon = ({ positions, children, data, desc, ...rest }) => {
   }
 
   return (
-    <Polygon positions={positions} onClick={handleClick} fillOpacity={0.6} {...rest}>
+    <Polygon positions={positions} onClick={handleClick} fillOpacity={0.3} {...rest}>
     	<Popup>{desc} <br/>People:{calcPeople()} </Popup>
       { children }
     </Polygon>

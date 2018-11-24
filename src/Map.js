@@ -13,31 +13,31 @@ export const addressPoints = [
   [61.4927, 23.76039, '100010'],
 ];
 
-const { Overlay } = LayersControl;
+const { BaseLayer, Overlay } = LayersControl;
 
 class CustomMap extends Component {
   constructor(props) {
-    super(props)
+    super(props);
     this.state = {
-      zoom: 17 
-    }
-    this.np = []
+      zoom: 17,
+    };
+    this.np = [];
   }
 
-  handleZoomChange = (e) => this.setState({ zoom: e.target._zoom })
-  
+  handleZoomChange = e => this.setState({ zoom: e.target._zoom });
+
   handleClick = e => {
-    const npt = {desc:"sens " + e.latlng, coords:[e.latlng.lat, e.latlng.lng]}
-    this.np.push(npt)
-    console.log(JSON.stringify(this.np))
+    const npt = { desc: 'sens ' + e.latlng, coords: [e.latlng.lat, e.latlng.lng] };
+    this.np.push(npt);
+    console.log(JSON.stringify(this.np));
   };
 
   render() {
     const middlePosition = [61.4926, 23.7625];
     const mapBounds = [[61.494761, 23.758024], [61.491382, 23.767546]];
-    const { zoom } = this.state
-    
-    console.log(zoom)
+    const { zoom } = this.state;
+
+    console.log(zoom);
 
     return (
       <Map
@@ -45,31 +45,40 @@ class CustomMap extends Component {
         zoom={zoom}
         minNativeZoom={18}
         maxBounds={mapBounds}
+        bounds={mapBounds}
         minZoom={17}
         maxZoom={19}
         onClick={this.handleClick}
         onzoomend={this.handleZoomChange}
       >
-        <LayersControl collapsed = {false}>
+        <LayersControl collapsed={false}>
           <TileLayer
             url="https://korona.geog.uni-heidelberg.de/tiles/roads/x={x}&y={y}&z={z}"
             attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
           />
-          <Overlay name="Heatmap" checked = {true}>
-            <PeopleHeatmap zoom={zoom} data={this.props.data}/>
-          </Overlay>
 
-          <Overlay name="Ares of interest" checked = {true}>
-            <LayerGroup>
+          <Overlay name="Ares of interest" checked={true}>
+            <LayerGroup style={{zIndex: 1000}}>
               {polygonCoords.polyPositions.map(pos => (
-                <Polygon key={pos.desc} positions={pos.coords} color={pos.color} data={this.props.data} desc={pos.desc}></Polygon>
+                <Polygon
+                  key={pos.desc}
+                  positions={pos.coords}
+                  color={pos.color}
+                  data={this.props.data}
+                  desc={pos.desc}
+                />
               ))}
             </LayerGroup>
           </Overlay>
+
+          <Overlay name="Heatmap" checked={true}>
+            <PeopleHeatmap zoom={zoom} data={this.props.data} />
+          </Overlay>
+          
         </LayersControl>
       </Map>
     );
   }
-};
+}
 
 export default CustomMap;
