@@ -3,8 +3,10 @@ import { Map, Marker, Popup, TileLayer, Polygon } from 'react-leaflet';
 import HeatmapLayer from 'react-leaflet-heatmap-layer';
 
 export const addressPoints = [
-  [61.492635, 23.763434, '571'],
-  [61.492625, 23.763434, '486'],
+  [61.492635, 23.763434, '10'],
+  [61.492635, 23.763433, '10'],
+  [61.492635, 23.763300, '10'],
+  [61.492625, 23.763434, '30'],
   [61.4927, 23.76039, '100010'],
 ];
 
