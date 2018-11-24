@@ -74,6 +74,36 @@ const CustomMap = () => {
     [61.4942058, 23.7602374],
   ];
 
+  const yleStudio = [
+    [61.4918819, 23.7595481],
+    [61.4920125, 23.7596125],
+    [61.4919664, 23.7601006],
+    [61.4918461, 23.7600631],
+  ];
+
+  const toilet2 = [
+    [61.4919245, 23.7621469],
+    [61.4918310, 23.7622125],
+    [61.4918643, 23.7626497],
+    [61.4919564, 23.7625772],
+  ];
+
+  const vipArea = [
+    [61.4927066, 23.7615434],
+    [61.4927181, 23.7616534],
+    [61.4927988, 23.7616185],
+    [61.4928180, 23.7618036],
+    [61.4920790, 23.7620949],
+    [61.4920585, 23.7619205],
+    [61.4922403, 23.7616925],
+  ];
+
+  const TentStage = [
+    [61.4926808, 23.7595169],
+    [61.4925707, 23.7602303],
+    [61.4919408, 23.7596617],
+    [61.4919997, 23.7590823],
+  ];
 
 
   return (
@@ -173,6 +203,38 @@ const CustomMap = () => {
           Entrance 1.
           <br />
           400 hlö.
+        </Popup>
+      </Polygon>
+
+      <Polygon positions={yleStudio}>
+        <Popup>
+          Yle Studio.
+          <br />
+          60 hlö.
+        </Popup>
+      </Polygon>
+
+      <Polygon positions={toilet2}>
+        <Popup>
+          Toilet 2.
+          <br />
+          40 hlö.
+        </Popup>
+      </Polygon>
+
+      <Polygon positions={vipArea}>
+        <Popup>
+          Vip Area.
+          <br />
+          300 hlö.
+        </Popup>
+      </Polygon>
+
+      <Polygon positions={TentStage}>
+        <Popup>
+          Tent Stage.
+          <br />
+          600 hlö.
         </Popup>
       </Polygon>
 
