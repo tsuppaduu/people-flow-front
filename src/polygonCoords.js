@@ -1,12 +1,12 @@
 
 const polyPositions = [    
-  {desc: "Water faucet", coords: [
+  {desc: "Water faucet", color: "blue",coords: [
     [61.4930518, 23.7629637],//komio kärki
     [61.4929871, 23.7627025], 
     [61.4929360, 23.7631789],//kolmio oikea
   ]},
 
-  {desc: "YleX studio", coords: [
+  {desc: "YleX studio", color: "pink", coords: [
     [61.4930518, 23.7629637],
     [61.4929360, 23.7631789],
     [61.4929971, 23.7637765],
@@ -20,14 +20,14 @@ const polyPositions = [
     [61.4930631, 23.7645731],
   ]},
 
-  {desc: "First exit from stadium", coords: [
+  {desc: "First exit from stadium", color: "green", coords: [
     [61.4928685, 23.7625013],//poistumis vasen
     [61.4930810, 23.7623247],
     [61.4931425, 23.7626599],
     [61.4929871, 23.7627025],
   ]},
 
-  {desc: "Second exit from stadium", coords: [
+  {desc: "Second exit from stadium", color: "green", coords: [
     [61.4922644, 23.7627810],
     [61.4922183, 23.7629984],
     [61.4919955, 23.7628345],
@@ -44,7 +44,7 @@ const polyPositions = [
     [61.494, 23.7604],
   ]},
 
-  {desc: "Toilets in park", coords: [
+  {desc: "Toilets in park", color: "yellow",  coords: [
     [61.4932518, 23.7600391],
     [61.4931603, 23.7601215],
     [61.4931936, 23.7602985],
@@ -59,14 +59,14 @@ const polyPositions = [
   ]},
 
 
-  {desc: "First Aid", coords: [
+  {desc: "First Aid", color: "blue",  coords: [
     [61.4933054, 23.7618119],
     [61.4932314, 23.7618401],
     [61.4932554, 23.7620802],
     [61.4933165, 23.7620564],
   ]},
 
-  {desc: "Eatery large", coords: [
+  {desc: "Eatery large", color: "red",  coords: [
     [61.4930437, 23.7604092],//ruokapaikan vasen ylänurkka
     [61.4930233, 23.7603257],
     [61.4929681, 23.7601121],
@@ -86,7 +86,7 @@ const polyPositions = [
     [61.4942058, 23.7602374],
   ]},
 
-  {desc: "Yle studio in the park", coords: [
+  {desc: "Yle studio in the park", color: "pink",  coords: [
     [61.4918213, 23.7596066],
     [61.4919185, 23.7597683],
     [61.4918801, 23.7600231],
@@ -110,14 +110,14 @@ const polyPositions = [
     [61.4922403, 23.7616925],
   ]},
 
-  {desc: "Tent artist platform", coords: [
+  {desc: "Tent artist platform", color: "black",  coords: [
     [61.4919451, 23.7596329],
     [61.4920458, 23.7597421],//oikea reuna
     [61.4921149, 23.7591305],
     [61.4920100, 23.7590447],
   ]},
 
-  {desc: "Serving area for alcohol in the park", coords: [
+  {desc: "Serving area for alcohol in the park", color: "cyan",  coords: [
     [61.4921149, 23.7591305],
     [61.4921450, 23.7588550],
     [61.4929982, 23.7593987],
@@ -133,7 +133,7 @@ const polyPositions = [
     [61.4920821, 23.7594215],//midlle point
   ]},
 
-  {desc: "Tent stage", coords: [
+  {desc: "Tent stage", color: "white",  coords: [
     [61.4926568, 23.7598143],
     [61.4920821, 23.7594215],
     [61.4920458, 23.7597421],//oikea reuna
@@ -143,14 +143,14 @@ const polyPositions = [
 
 
 
-  {desc: "Toilets inside the stand", coords: [
+  {desc: "Toilets inside the stand", color: "blue",  coords: [
     [61.4932724, 23.7643010],
     [61.4933801, 23.7642425],
     [61.4934371, 23.7649040],
     [61.4933326, 23.7649408],
   ]},
 
-  {desc: "Inva toilets", color: "blue", coords: [
+  {desc: "Inva toilets", color: "yellow", coords: [
     [61.4933020, 23.7633596],
     [61.4931958, 23.7634089],
     [61.4931779, 23.7632158],
@@ -164,7 +164,7 @@ const polyPositions = [
     [61.4933456, 23.7638061],
   ]},
 
-  {desc: "Exclusive area", coords: [
+  {desc: "Exclusive area", color: "blue",  coords: [
     [61.4923213, 23.7644085],
     [61.4924186, 23.7643656],
     [61.4924921, 23.7651774],
@@ -192,14 +192,14 @@ const polyPositions = [
     [61.4936865, 23.7640447],
   ]},
 
-  {desc: "Street stage (alcohol serving area)",  color: "blue", coords: [
+  {desc: "Street stage (alcohol serving area)",  color: "cyan", coords: [
     [61.4934270, 23.7641171],
     [61.4935602, 23.7640613],
     [61.4934885, 23.7633123],
     [61.4933553, 23.7633606], 
   ]},
 
-  {desc: "Stadium stage by YLEX (alcohol serving area)",  color: "blue", coords: [
+  {desc: "Stadium stage by YLEX (alcohol serving area)",  color: "cyan", coords: [
     [61.4925018, 23.7652243],
     [61.4925282, 23.7652266],
     [61.4927274, 23.7651644],//lavan puolelta syvempi
@@ -220,7 +220,7 @@ const polyPositions = [
     [61.4924903, 23.7651756],
   ]},
 
-  {desc: "Platform for artists", coords: [
+  {desc: "Platform for artists", color: "black",  coords: [
     [61.4926998, 23.7648119],//common point 
     [61.4928288, 23.7647605],//ylempi keski
     [61.4928600, 23.7650861],//keihäs
@@ -235,7 +235,7 @@ const polyPositions = [
     [61.4927274, 23.7651644],//tähän pitää yhdistää
   ]},
 
-  {desc: "Stadium stage by Ylex", coords: [
+  {desc: "Stadium stage by Ylex", color: "white",  coords: [
     [61.4926998, 23.7648119],//alempi kulma
     [61.4926366, 23.7641044],//keskikohta
     [61.4928685, 23.7625013],//poistumis vasen

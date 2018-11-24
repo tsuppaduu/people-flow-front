@@ -36,7 +36,7 @@ class CustomMap extends Component {
     const middlePosition = [61.4926, 23.7625];
     const mapBounds = [[61.494761, 23.758024], [61.491382, 23.767546]];
     const { zoom } = this.state
-
+    
     console.log(zoom)
 
     return (
@@ -62,9 +62,7 @@ class CustomMap extends Component {
           <Overlay name="Ares of interest" checked = {true}>
             <LayerGroup>
               {polygonCoords.polyPositions.map(pos => (
-                <Polygon key={pos.desc} positions={pos.coords} color={pos.color} data={this.props.data}>
-                  
-                </Polygon>
+                <Polygon key={pos.desc} positions={pos.coords} color={pos.color} data={this.props.data} desc={pos.desc}></Polygon>
               ))}
             </LayerGroup>
           </Overlay>

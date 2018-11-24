@@ -2,7 +2,7 @@ import React from 'react'
 import { Polygon, Popup } from 'react-leaflet'
 
 let np = []
-const CustomPolygon = ({ positions, children, data, ...rest }) => {
+const CustomPolygon = ({ positions, children, data, desc, ...rest }) => {
   const handleClick = e => {
     const npt = {desc:"sens " + e.latlng, coords:[e.latlng.lat, e.latlng.lng]}
     np.push(npt)
@@ -29,8 +29,8 @@ const CustomPolygon = ({ positions, children, data, ...rest }) => {
   }
 
   return (
-    <Polygon positions={positions} onClick={handleClick} {...rest}>
-    	<Popup> {calcPeople()} </Popup>
+    <Polygon positions={positions} onClick={handleClick} fillOpacity={0.6} {...rest}>
+    	<Popup>{desc} <br/>People:{calcPeople()} </Popup>
       { children }
     </Polygon>
   )
