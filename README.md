@@ -1,4 +1,4 @@
-# people-flow-front
+# People Flow
 
 We created a Bluetooth mesh network with smart sensors capable of detecting the number of people around them. This data is then displayed on a website or at info screens for instance during an event. 
 
