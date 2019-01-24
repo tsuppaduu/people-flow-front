@@ -2,6 +2,8 @@
 
 We created a Bluetooth mesh network with smart sensors capable of detecting the number of people around them. This data is then displayed on a website or at info screens for instance during an event. 
 
+**This project achieved the third place in the track "Future cities".** In total 25 teams competed in this track.
+
 Feasible applications for the data could be the following examples:
 
 1.	The user can choose the shortest lines and best paths around the venue or the city
@@ -13,5 +15,10 @@ We used state-of-the-art web development tools to visualize the data created by 
 
 In addition, it should be noted that the nodes are (solar) battery powered so they do not need constant external power. This is an important feature when considering emergencies.
 
-You can see our powerpoint presentation from the following link: 
-https://1drv.ms/p/s!Ah2-0rs8ef--sk-4q60XoNgTMpgL
+You can see our powerpoint presentation by clicking [here](https://1drv.ms/p/s!Ah2-0rs8ef--sk-4q60XoNgTMpgL) (OneDrive).
+
+You can try our demo application in Heroku by clicking the picture below.
+
+[![Demo](https://i.imgur.com/X3pexCl.png)](https://people-flow-front.herokuapp.com/ "Demo app")
+
+
